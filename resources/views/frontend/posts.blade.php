@@ -12,7 +12,7 @@
                   <h1 class="fw-medium post-title"> {{$post->title}} </h1>
                   <div class="post-page-info d-flex mt-4">
                      <div class="post-info-logo me-2">
-                        <img src="{{url('frontend/img/favicon.webp')}}" alt="">
+                        <img src="{{url('frontend/img/icon1.png')}}" alt="">
                      </div>
                      <div class="post-inf-details d-flex flex-column">
                         <span>রিপোর্টার : {{$post->user->name}}</span>
@@ -41,27 +41,7 @@
                </div>
             </div>
             <div class="post-bottom mb-5">
-               <div class="comment-sort d-flex justify-content-between">
-                  <div class="comment">
-                     <h4 class="fw-bold m-0">0 comment</h4>
-                  </div>
-                  <div class="sort">
-                     <span>sort by</span>
-                     <select>
-                        <option selected value="newest">newest</option>
-                        <option value="oldest">Oledest</option>
-                     </select>
-                  </div>
-               </div>
-               <div class="profile-and-comment d-flex py-4 border-bottom border-top mt-5">
-                  <div class="commenter-profile me-3">
-                     <img src="img/commentor.png" alt="" width="70" height="100%">
-                  </div>
-                  <div class="w-100">
-                     <textarea class="w-100 border" name="" id="" rows="5"></textarea>
-                  </div>
-               </div>
-               <span class="facebook-plugins py-2 d-block"><i class="fab fa-facebook"></i> Facebook comments plugins</span>
+               <div class="fb-comments" data-href="{{ Request::url() }}" data-width="100%" data-numposts="5"></div>
             </div>
             <div class="section-title d-flex justify-content-between align-items-center py-2">
                <h4 class="m-0 py-2">সম্পর্কিত</h4>

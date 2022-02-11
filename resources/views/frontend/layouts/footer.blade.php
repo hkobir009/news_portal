@@ -3,7 +3,7 @@
     <div class="footer-top">
       <div class="logo-part d-flex align-items-center flex-column flex-md-row">
         <div class="footer-logo me-0 me-md-5">
-          <a href="index.html"><img width="300" src="{{asset('img/dhaka-post.webp')}}" alt="Logo" class="footerlogo img-fluid"></a>
+          <a href="{{route('home')}}"><img width="300" src="{{asset('frontend/img/logo1.png')}}" alt="Logo" class="footerlogo img-fluid"></a>
         </div>
         <div class="subscribed-field position-relative mt-md-0 mt-4 ms-auto">
           <form action="{{Route('store_sub')}}" method="post">
